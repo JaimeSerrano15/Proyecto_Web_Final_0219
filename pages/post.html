@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Post</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><i>Logo</i></li>
-        <li><i>Home</i></li>
-        <li><span>Contador</span></li>
-        <li><i>Crear Post</i></li>
-      </ul>
-    </nav>
-    <section>
-        <h2>Crear Post</h2>
-        <article>
-            <h3>Post</h3>
-            <input type="text" placeholder="Un título creativo...">
-            <button type="submit">Cancelar</button>
-        </article>
-        <article></article>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Post</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><i>Logo</i></li>
+      <li><i>Home</i></li>
+      <li><span>Contador</span></li>
+      <li><i>Crear Post</i></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Crear Post</h2>
+    <article>
+      <h3>Post</h3>
+      <input type="text" placeholder="Un título creativo..." />
+      <textarea cols="30" rows="10" placeholder="Deja volar tu imaginación..."></textarea>
+      <button type="reset">Cancelar</button>
+      <button type="submit">Post</button>
+    </article>
+    <article>
+      <h3>
+        <h3>Image-Post</h3>
+        <label for="image">Seleeciona una imagen</label>
+        <input id="image" type="file">
+        <input type="text" placeholder="Un título creativo..." />
+        <textarea cols="30" rows="10" placeholder="Deja volar tu imaginación..."></textarea>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Post</button>
+      </h3>
+    </article>
+  </section>
+</body>
+
 </html>
