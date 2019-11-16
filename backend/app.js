@@ -10,7 +10,17 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 // Connect to DataBase
-
+mongoose.connect('mongodb+srv://jaime:jaime@prueba-agkzn.mongodb.net/test?retryWrites=true&w=majority', {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+  .then(()=>{
+    console.log("Success Connected to database");
+  })
+  .catch((err)=>{
+    console.log("Errooooor" + err);
+  });
 
 
 var app = express();

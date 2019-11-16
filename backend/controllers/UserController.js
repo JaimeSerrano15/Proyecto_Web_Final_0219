@@ -39,6 +39,6 @@ module.exports.register = (req, res, next) => {
                 _id: user._id
             });
     }).catch(err => {
-        next(err);
+        console.log(err);
     });
 };
