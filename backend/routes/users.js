@@ -7,6 +7,8 @@ router.get('/', (req,res,next) =>{
   res.render('users');
 })
 
-router.post('/', userController.register);
+router.post('/', function(req,res,next){
+  userController.register(req,res,next);
+});
 
 module.exports = router;
